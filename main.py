@@ -59,11 +59,11 @@ def valid(grd, num, coordinate):
             return False
 
     # Checks the box
-    box_X = coordinate[1] // 3
-    box_Y = coordinate[0] // 3
+    SquareX = coordinate[1] // 3
+    SquareY = coordinate[0] // 3
 
-    for i in range(box_Y*3, box_Y*3 + 3):
-        for n in range(box_X * 3, box_X*3 + 3):
+    for i in range(SquareY*3, SquareY*3 + 3):
+        for n in range(SquareX * 3, SquareX*3 + 3):
             if grd[i][n] == num and (i,n) != coordinate:
                 return False
 
