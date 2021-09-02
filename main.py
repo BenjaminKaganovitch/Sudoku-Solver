@@ -86,8 +86,8 @@ def find_Solution(grd):
                 return True
             grd[row][col] = 0
     return False
-print("Unsolved")
+print("Unsolved:")
 print_game(grid)
 find_Solution(grid)
-print("Solved!")
+print("Solved!:")
 print_game(grid)
